@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-This is my first website!
+This is Yitong Wang's HW4 Website!
 ============================================
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
