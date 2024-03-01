@@ -25,7 +25,8 @@ def jupyter_to_md(notebook, output_dir=OUTPUT_DIR):
     return f"jupytext --to markdown --output-dir={output_dir} ./src/{notebook}.ipynb"
 def jupyter_to_python(notebook, build_dir):
     """Convert a notebook to a python script"""
-    return f"jupyter nbconvert --to python ./src/{notebook}.ipynb --output _{notebook}.py --output-dir {build_dir}"
+    # return f"jupyter nbconvert --to python ./src/{notebook}.ipynb --output _{notebook}.py --output-dir {build_dir}"
+    return f'jupyter nbconvert --to python ./src/{notebook}.ipynb --output _{notebook}.py --output-dir "{build_dir}"'
 def jupyter_clear_output(notebook):
     return f"jupyter nbconvert --ClearOutputPreprocessor.enabled=True --ClearMetadataPreprocessor.enabled=True --inplace ./src/{notebook}.ipynb"
 # fmt: on
